@@ -3,22 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 | Napoleon B. Tumale</title>
-    <meta name="description" content="Beginning of WDD131">
+    <title>WDD 131 - Dynamic Web Fundamentals - Napoleon B. Tumale</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Napoleon B. Tumale, Personal Landing Page">
     <meta name="author" content="Napoleon B. Tumale">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Hobbies</li>
-            </ul>
+            <a href="https://www.linkedin.com/in/tumale-napoleon-a14628354/">My linkedIn</a>
+            <a href="https://byupw.instructure.com/">My Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p45-p48#p45">My Favorite Scripture</a>
+            <a href="final-project.html">Final Project</a>
         </nav>
     </header>
     <main>
-        <h1>WDD131 🏰 Napoleon B. Tumale</h1>
+        <h1>Napoleon B. Tumale</h1>
+        <section class="card" id="info">
+            <h2 id="card">About Me</h2>
+            <p id="my-intro">My name is Napoleon and Paul is my nickname. I like my name Napoleon though, because Napoleon Bonaparte has such a great story. I live in the Philippine Archipelago. 
+            I love learning web development and it's something I'm trying to focus right now. I worked as an English Tutor for plenty of years and I still want to pursue my
+            dreams in that field combined with the profession I am learning right now which is Software Development.</p>
+            <img id="my-photo" src="images/napoleon-tumale.jpg" alt="Napoleon Tumale's selfie on the mountain.">
+            <h2 id="isabela">Isabela, Philippines</h2>
+            <img id="flag" src="images/philippine-flag.jpg" alt="Philippine Flag in a pole">
+            <p id="my-country">Philippines is an amazing country known for people's kind hospitality to foreigners. When a Filipino person succeeds globally, we cheer for them. Like 
+                Manny Paquiao! Philippines is a beautiful country sorrounded by stunning white sand beaches. Even beaches that has not been visited are tourist spot worthy! Because they
+                have beautiful white sand. And we love Karaoke!</p>
+        </section>
+        <section class="card" id="resources">
+            <h2 id="card">Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/">WDD 131 Course</a></li>
+                <li><a href="https://squoosh.app/">Photo Editing</a></li>
+                <li><a href="https://unsplash.com/">Image Library</a></li>
+                <li><a href="https://discipledeveloper.github.io/wdd130/">Recent Project (WDD 130)</a></li>
+            </ul>
+        </section>
+        
     </main>
+    <footer>
+        <p>©2025 🏰 Napoleon B. Tumale 🏰 Philippines <span id="2025"></span></p>
+        <p id="lastModified"></p>
+        
+    </footer>
 </body>
 </html>

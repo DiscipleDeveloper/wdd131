@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+    color: var(--dark-font);
+    background-color: var(--primary-background);
+}
+
+:root {
+    --primary-color: #000073;
+    --secondary-color: #402e2a;
+    --accent-color: #e8e8e5;
+    --primary-background: #fffffc;
+    --light-font: #faf9f6;
+    --dark-font: #1a2a40;
+    --font-headings: "Nunito", sans-serif;
+    --font-body: "Merriweather", serif;
+}
+
+header, footer {
+    width: 100vw;
+}
+
+#course-title {
+    display: block;
+    background-color: var(--primary-color);
+    font-family: var(--font-headings);
+    color: var(--light-font);
+    text-align: center;
+    height: 9.5vh;
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px white;
+    padding-top: 5px;
+    
+}
+
+nav { 
+    display: flex;
+    height: 5vh;
+    
+}
+
+nav a {
+    flex: 1 1 auto;
+    background-color: var(--secondary-color);
+    color: var(--light-font);
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    text-shadow: 3px 3px 7px lightgoldenrodyellow;
+}
+
+main {
+    width: 90vw;
+    margin: 2.2rem 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 38%;
+    gap: 2rem;
+    justify-self: center;
+}
+
+h1 {
+    grid-column: 1/3;
+    color: var(--primary-color);
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--secondary-color);
+}
+
+.card {
+    border: groove 3px var(--secondary-color);
+    padding: 1rem;
+    border-radius: 2rem;
+    height: 570px;
+}
+
+#info { /* Container */
+    display: grid;
+    grid-template-rows: 2.5rem 40% 10% 40%;
+    grid-template-columns: 40% 30% 30%;
+    place-items: center;  
+}
+
+#my-photo {
+    height: 17rem;
+    border-radius: 4px;
+    grid-area: 1/3/3/4;
+    margin-top: 1.8rem;
+    margin-left: 1rem;
+}
+
+#flag {
+    width: 17rem;
+    border-radius: 4px;
+    grid-area: 4/1/5/2;
+}
+
+#isabela {
+    margin-top: 2rem;
+    grid-area: 3/1/4/4;
+    border-top: thin 1px var(--dark-font);
+}
+
+#my-intro {
+    grid-area: 2/1/3/3;
+    align-self: self-start;
+}
+
+#my-country {
+    grid-area: 4/2/5/4;
+}
+
+#card {
+    justify-self: start;
+}
+
+#resources {
+     /*Container*/
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--primary-color);
+    
+}
+
+#resources h2 {
+    align-self: flex-end;
+    color: var(--light-font);
+    background-color: var(--primary-color);
+}
+
+#resources a,#resources ul,#resources li {
+    color: var(--light-font);
+    background-color: var(--primary-color);
+    margin: .5rem
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    border-top: solid .5px var(--dark-font);
+    height: 10vh;
+    padding: 1rem;
+}
