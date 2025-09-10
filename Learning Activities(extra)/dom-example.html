@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+    <style>
+        .highlight {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img src="dinosaur.png"
+            alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+    </section>
+    <script>
+        // Document Object Model Learning Starts here
+            const link = document.querySelector("a");       //Creating a dom uses document.querySelector("put-element-here") then store it to a variable
+            link.textContent = "Mozilla Developer Network";  // using node.textContent // querySelector is the standard modern selector
+            link.href = "https://developer.mozilla.org";
+
+            const sect = document.querySelector("section"); // querySelector() always selects what's going to be modified
+            const para = document.createElement("p");       // This is how you creat an element .createElement("elementTagYouWantToMake")
+            para.textContent = "We hope you enjoyed the ride.";
+            sect.appendChild(para);
+
+            const text = document.createTextNode(" — the premier source for web development knowledge.",);
+            const linkPara = document.querySelector("p"); // Make a node accessible by making variable
+            linkPara.appendChild(text); // Add a node to a node
+            // Important! Here we learned how to add nodes to the DOM.
+            
+            sect.appendChild(linkPara);  // move node
+            sect.removeChild(linkPara);  //remove node
+            linkPara.remove(); // remove itself, just itself
+
+        // Manipulating Styles
+            // para.style.color = "white"; //Styles in Javascript is lowerCamelCase
+            // para.style.backgroundColor = "black";
+            // para.style.padding = "10px";
+            // para.style.width = "250px";
+            // para.style.textAlign = "center";
+            para.setAttribute("class", "highlight");
+    </script>
+</body>
+
+</html>
