@@ -1,0 +1,125 @@
+/* For Mobile View */
+
+:root {
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #e01a4f;
+    --secondary-color: #f58220;
+    --font-light: #faf9f6;
+    --font-dark: #1a2a40;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+#menu::before {
+    content: "☰";
+    
+}
+
+.open {
+    display: block;
+}
+
+.open a{
+    display: block;
+}
+
+header {
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 16px #F08DA7;
+}
+
+#title {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: white;
+    width: 90vw;
+    text-shadow: 0px 0px 3px white;  
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    color: var(--font-dark);
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+nav a:hover {
+    text-align: center;
+    background-color: #dadada;
+    color: var(--font-dark);
+    border-radius: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    grid-column: 1/-1;
+    text-align: center;
+    margin: 1rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    padding-top: 1.2rem;
+}
+
+figure {
+    padding: 1rem;
+    text-align: center;
+    color: var(--font-dark);
+}
+
+img {
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px #1F1300;
+}
+
+footer {
+    border-top: groove 2px var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
