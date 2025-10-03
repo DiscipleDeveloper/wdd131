@@ -1,0 +1,57 @@
+:root {
+    --blue: #103D8E;
+    --red: #D11B31;
+    --yellow: #DDB812;
+    --white: #F4F4F4;
+    --heading-font: "Satisfy", cursive;
+    --body-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 580px) {
+
+    body,
+    footer {
+        max-width: 1600px;
+    }
+
+    .hero {
+        position: relative;
+    }
+    section {
+        width: 24vw;
+        background-color: var(--white);
+        opacity: .9;
+        border-radius: 1rem;
+        position: absolute;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .data {
+        top: 2rem;
+        right: 2rem;
+        border: solid 2px var(--blue);
+    }
+
+    .weather {
+        left: 2rem;
+        bottom: 2rem;
+        border: solid 2px var(--red);
+    }
+
+    .weather h2:after {
+        content: "   ☀️";
+    }
+    
+    #icon {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Napoleon B. Tumale">
+    <meta name="description" content="Practice Responsive images.">
+    <title>Places</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/jeep-hero-large.webp" media="(min-width: 580px)">
+                <img src="images/jeep-hero-small.webp" alt="Philippine Jeepney" width="450" height="479">
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>299,764 sq km</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>116,786,962</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Manila</td>
+                    </tr>
+                    <tr>
+                        <th>Language:</th>
+                        <td>Tagalog</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Philippine Peso</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>GMT+8</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+639</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.ph</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img id="icon" src="images/weather.svg" alt="Weather Icon">
+                
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>30°C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td>9 km/h</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="wind-chill"></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="yearNow"></span> 🏰 Napoleon B. Tumale 🏰 Philippines<br></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
