@@ -46,7 +46,7 @@
         border: solid 2px var(--red);
     }
 
-    .weather h2:after {
+    .weather h2::after {
         content: "   🌞";
     }
     
