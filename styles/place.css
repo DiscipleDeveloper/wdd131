@@ -11,29 +11,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 main {
     background-color: var(--white);
-    
+}
+
+body {
+    max-width: 1550px;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
-    margin: 0;
-    border-top: solid .5rem var(--red);
+    height: 100%;
     border-bottom: solid .5rem var(--blue);
 }
 
+
 header {
     color: rgb(183, 103, 5);
-    height: 6rem;
+    height: 5rem;
     justify-content: center;
     background: var(--white);
-    display: flex;
+    display: grid;
     align-items: center;
     border-top: solid .5rem var(--blue);
+    border-bottom: solid .5rem var(--red);
 }
 
 h1 {
@@ -52,9 +56,10 @@ footer {
     text-align: center;
     height: 5rem;
     padding: 1rem;
-    border-top: solid .5rem var(--red);
+    border-top: solid .5rem var(--blue);
+    border-bottom: solid .5rem var(--red);
+    
 }
-
 
 h2 {
     color: rgb(183, 103, 5);
@@ -66,15 +71,6 @@ section {
     text-align: center;
 }
 
-.data {
-    border-top: solid .5rem var(--red);
-}
-
-.weather {
-    border-top: solid .55rem var(--yellow);
-    border-bottom: solid .5rem var(--blue);
-}
-
 table {
     margin: 0 auto;
 }
@@ -83,6 +79,10 @@ table {
     width: 62px;
     height: auto;
     border: none;
+}
+
+.weather {
+    border-top: solid .5rem var(--red) ;
 }
 
 
