@@ -1,0 +1,32 @@
+
+
+img {
+    display: block;
+    animation: alternate;
+    background: black;
+
+    animation: fade 15s;
+}
+
+body {
+    margin: 0 auto;
+    width: 400px;
+    
+}
+
+footer {
+    text-align: center;
+}
+
+
+/* fade is user made, could be any word but I chose fade. */
+/* It's applied in the animation declaration for the img and what the animation does. */
+@keyframes fade {   
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
