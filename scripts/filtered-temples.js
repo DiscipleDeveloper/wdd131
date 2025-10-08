@@ -89,7 +89,7 @@ const temples = [
     },
     {
         templeName: "Urdaneta City Philippines",
-        location: "Urdaneta City Pangasinan, Philippines",
+        location: "Urdaneta City Pangasinan Philippines",
         dedicated: "2024, April, 28",
         area: 32604,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/urdaneta-philippines-temple/urdaneta-philippines-temple-45863-thumb.jpg"
@@ -110,7 +110,7 @@ function createTemplateCard(temples) {
 
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class="label>Dedicated:</span> ${temple.dedicated}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label">Area:</span> ${temple.area} Square Feet`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
