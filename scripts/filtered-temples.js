@@ -91,7 +91,7 @@ const temples = [
         templeName: "Urdaneta City Philippines",
         location: "Urdaneta City Pangasinan, Philippines",
         dedicated: "2024, April, 28",
-        area: "32604",
+        area: 32604,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/urdaneta-philippines-temple/urdaneta-philippines-temple-45863-thumb.jpg"
     }
 ];
@@ -130,8 +130,8 @@ function createTemplateCard(temples) {
 const home = document.querySelector("#home");
 const old = document.querySelector("#old");
 const newTemple = document.querySelector("#new");
-const large = document.querySelector("large");
-const small = document.querySelector("small");
+const large = document.querySelector("#large");
+const small = document.querySelector("#small");
 
 
 
@@ -139,6 +139,21 @@ home.addEventListener("click", () => {
     createTemplateCard(temples);
 })
 
+old.addEventListener("click", () => {
+    createTemplateCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900));
+});
+
+newTemple.addEventListener("click", () => {
+    createTemplateCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000));
+});
+
+large.addEventListener("click", () => {
+    createTemplateCard(temples.filter(temple => temple.area > 90000));
+});
+
+small.addEventListener("click", () => {
+    createTemplateCard(temples.filter(temple => temple.area < 10000));
+});
 
 createTemplateCard(temples);
 
