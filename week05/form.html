@@ -6,6 +6,9 @@
     <meta name="author" content="Napoleon B. Tumale">
     <meta name="description" content="Creating a Form with JavaScript">
     <title>Creating Dinamic Form: Product Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
@@ -13,7 +16,7 @@
 <body>
     <h1>Product Review</h1>
     <form action="review.html" method="get" >
-        <label>Product name
+        <label>Product name<span id="required">*</span>
         <select required name="products" id="products">
             <option disabled selected>Select a Product</option>
             <option value="books">Books</option>
@@ -26,22 +29,22 @@
         </select>
         </label>
 
-        <label>Overall Rating</label>
+        <div class="rcdiv">Overall Rating<span id="required">*</span></div>
         <div class="stars">
-            <input type="radio" id="fivestar" name="stars" value="fivestar" required><label for="fivestar"></label>
-            <input type="radio" id="fourstar" name="stars" value="fourstar" required><label for="fourstar"></label>
-            <input type="radio" id="threestar" name="stars" value="threestar" required><label for="threestar"></label>
-            <input type="radio" id="twostar" name="stars" value="twostar" required><label for="twostar"></label>
-            <input type="radio" id="onestar" name="stars" value="onestar" required><label for="onestar"></label>
+            <input type="radio" id="fivestar" name="stars" value="fivestar" required><label id="star" for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="fourstar" required><label id="star" for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="threestar" required><label id="star" for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="twostar" required><label id="star" for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="onestar" required><label id="star" for="onestar"></label>
         </div>
 
-        <label for="date">Date of Installation<input type="date" id="date" name="date" required></label>
+        <label for="date">Date of Installation<span id="required">*</span><input type="date" id="date" name="date" required></label>
         
-        <label>Which features do you always prefer?</label>
-        <label><input type="checkbox" name="design" value="yes">Design</label>
-        <label><input type="checkbox" name="durability" value="yes">Durability</label>
-        <label><input type="checkbox" name="affordability" value="yes">Affordability</label>
-        <label><input type="checkbox" name="branded" value="yes">Branded</label>
+        <div class="rcdiv">Which features do you always prefer?<br><span id="italic">(Check all that apply)</span></div>
+        <label id="checkbox"><input type="checkbox" name="design" value="yes">Design</label>
+        <label id="checkbox"><input type="checkbox" name="durability" value="yes">Durability</label>
+        <label id="checkbox"><input type="checkbox" name="affordability" value="yes">Affordability</label>
+        <label id="checkbox"><input type="checkbox" name="branded" value="yes">Branded</label>
         
 
         <label for="comments">What do you think of our products? <span class="optional">(Optional)</span>
