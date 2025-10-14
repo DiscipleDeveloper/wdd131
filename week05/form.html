@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Napoleon B. Tumale">
+    <meta name="description" content="Creating a Form with JavaScript">
+    <title>Creating Dinamic Form: Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <h1>Product Review</h1>
+    <form action="review.html" method="get" >
+        <label>Product name
+        <select required name="products" id="products">
+            <option disabled selected>Select a Product</option>
+            <option value="books">Books</option>
+            <option value="laptops">Laptops</option>
+            <option value="pens">Pens</option>
+            <option value="cars">Cars</option>
+            <option value="flowers">Flowers</option>
+            <option value="chocolates">Chocolates</option>
+            <option value="clothes">Clothes</option>
+        </select>
+        </label>
+
+        <label>Overall Rating</label>
+        <div class="stars">
+            <input type="radio" id="fivestar" name="stars" value="fivestar" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="fourstar" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="threestar" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="twostar" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="onestar" required><label for="onestar"></label>
+        </div>
+
+        <label for="date">Date of Installation<input type="date" id="date" name="date" required></label>
+        
+        <label>Which features do you always prefer?</label>
+        <label><input type="checkbox" name="design" value="yes">Design</label>
+        <label><input type="checkbox" name="durability" value="yes">Durability</label>
+        <label><input type="checkbox" name="affordability" value="yes">Affordability</label>
+        <label><input type="checkbox" name="branded" value="yes">Branded</label>
+        
+
+        <label for="comments">What do you think of our products? <span class="optional">(Optional)</span>
+        <textarea name="comments" id="comments" placeholder="I really like your products because..."></textarea></label>
+
+        <label for="name">Your Name <span class="optional">(Optional)</span><input type="text" id="name" name="name" placeholder="John Gomez"></label>
+
+        <button type="submit" value="Send Feedback">Send Feedback</button>
+    </form>
+    
+</body>
+<footer>
+    <p>©<span id="yearNow"></span> 🏰 Napoleon B. Tumale 🏰 Philippines</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+</html>

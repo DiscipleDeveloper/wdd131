@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+body,
+footer,
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+    
+}
+
+form {
+    border: 2px solid rgb(6, 6, 171);
+    border-radius: 3px;
+}
+
+label {
+    display: block;
+    margin: 1.5rem;
+    padding-top: 1rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars > label {
+    color: gold;
+    width: 32px;
+    height: 32px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+    color: green;
+}
+
+.stars > label::before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
+    color: green;
+}
+
+select,
+textarea,
+button,
+input[type="date"],
+input[type="text"] {
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    border-radius: 5px;
+    border: solid 2px blue;
+    
+}
+
+input[type="checkbox"] {
+    margin: 0 .5rem 0 0;
+    padding: 2rem;   
+}
+
+button {
+    margin: 2rem auto;
+    width: 88%;
+}
+
+
+textarea {
+    height: 6rem;
+}
+
+
+footer {
+    text-align: center;
+    margin: 2rem;
+    border-top: solid 2px lightblue;
+    padding: .5rem;
+}

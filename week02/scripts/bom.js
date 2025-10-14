@@ -4,7 +4,7 @@ const list = document.querySelector("#list");
 
 
 addChapterButton.addEventListener("click", function () {
-    if (input.value.trim !== "") {
+    if (input.value.trim() !== "") {
         
         const favchapList = document.createElement("li");
         favchapList.textContent = input.value;
