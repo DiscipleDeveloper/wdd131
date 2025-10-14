@@ -38,10 +38,11 @@ label {
     font-weight: 600;
 }
 
+/* --------------------Design Technique for Stars Ratings----------------------------- */
+
 input[type="radio"] {
     display: none;
 }
-
 
 .stars {
     display: flex;
@@ -62,17 +63,30 @@ input[type="radio"] {
     caret-color: rgba(0, 0, 0, 0);
 }
 
-.stars > label:hover {
-    color: green;
-}
-
 .stars > label::before {
     content: "\2606";
+}
+
+.stars label:hover~label,
+.stars>label:hover {
+    color: green;
 }
 
 .stars input:checked ~ label::before {
     content: "\2605";
     color: green;
+}
+
+/* ------------------------------------------------- */
+
+.checkbox {
+    margin: .2rem 0 .2rem 1.5rem;
+    padding: 5px;
+}
+
+#italic {
+    font-style: italic;
+    font-size: .8rem;
 }
 
 .rcdiv {
@@ -88,13 +102,9 @@ label.star {
     margin: 0 1.75rem;
 }
 
-.checkbox {
-    margin: .2rem 0 .2rem 1.5rem;
-    padding: 5px;
-}
 
-#italic {
-    font-style: italic;
+
+.optional {
     font-size: .8rem;
 }
 
