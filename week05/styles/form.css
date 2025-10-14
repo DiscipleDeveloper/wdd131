@@ -84,11 +84,11 @@ input[type="radio"] {
     margin: 0 1rem 0 2.2rem;
 }
 
-#star {
+.star {
     margin: 0 1.7rem;
 }
 
-#checkbox {
+.checkbox {
     margin: .2rem 0 .2rem 1.5rem;
     padding: 5px;
 }
@@ -98,7 +98,7 @@ input[type="radio"] {
     font-size: .8rem;
 }
 
-#required {
+.required {
     color: rgb(18, 5, 100);
 }
 

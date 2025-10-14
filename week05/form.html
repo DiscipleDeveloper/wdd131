@@ -16,9 +16,9 @@
 <body>
     <h1>Product Review</h1>
     <form action="review.html" method="get" >
-        <label>Product name<span id="required">*</span>
+        <label>Product name<span class="required">*</span>
         <select required name="products" id="products">
-            <option disabled selected>Select a Product</option>
+            <option value="" disabled selected>Select a Product</option>
             <option value="books">Books</option>
             <option value="laptops">Laptops</option>
             <option value="pens">Pens</option>
@@ -29,22 +29,22 @@
         </select>
         </label>
 
-        <div class="rcdiv">Overall Rating<span id="required">*</span></div>
+        <div class="rcdiv">Overall Rating<span class="required">*</span></div>
         <div class="stars">
-            <input type="radio" id="fivestar" name="stars" value="fivestar" required><label id="star" for="fivestar"></label>
-            <input type="radio" id="fourstar" name="stars" value="fourstar" required><label id="star" for="fourstar"></label>
-            <input type="radio" id="threestar" name="stars" value="threestar" required><label id="star" for="threestar"></label>
-            <input type="radio" id="twostar" name="stars" value="twostar" required><label id="star" for="twostar"></label>
-            <input type="radio" id="onestar" name="stars" value="onestar" required><label id="star" for="onestar"></label>
+            <input type="radio" id="fivestar" name="stars" value="fivestar" required><label class="star" for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="fourstar" required><label class="star" for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="threestar" required><label class="star" for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="twostar" required><label class="star" for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="onestar" required><label class="star" for="onestar"></label>
         </div>
 
-        <label for="date">Date of Installation<span id="required">*</span><input type="date" id="date" name="date" required></label>
+        <label for="date">Date of Installation<span class="required">*</span><input type="date" id="date" name="date" required></label>
         
         <div class="rcdiv">Which features do you always prefer?<br><span id="italic">(Check all that apply)</span></div>
-        <label id="checkbox"><input type="checkbox" name="design" value="yes">Design</label>
-        <label id="checkbox"><input type="checkbox" name="durability" value="yes">Durability</label>
-        <label id="checkbox"><input type="checkbox" name="affordability" value="yes">Affordability</label>
-        <label id="checkbox"><input type="checkbox" name="branded" value="yes">Branded</label>
+        <label class="checkbox"><input type="checkbox" name="design" value="yes">Design</label>
+        <label class="checkbox"><input type="checkbox" name="durability" value="yes">Durability</label>
+        <label class="checkbox"><input type="checkbox" name="affordability" value="yes">Affordability</label>
+        <label class="checkbox"><input type="checkbox" name="branded" value="yes">Branded</label>
         
 
         <label for="comments">What do you think of our products? <span class="optional">(Optional)</span>
@@ -54,10 +54,12 @@
 
         <button type="submit" value="Send Feedback">Send Feedback</button>
     </form>
-    
-</body>
+
 <footer>
     <p>©<span id="yearNow"></span> 🏰 Napoleon B. Tumale 🏰 Philippines</p>
     <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
+    
+</body>
+
 </html>
