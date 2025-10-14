@@ -29,6 +29,7 @@ form {
     border: 2px solid rgb(6, 6, 171);
     border-radius: 3px;
     background-color: rgb(241, 241, 246);
+    box-shadow: 3px 3px 4px rgb(88, 88, 235);
 }
 
 label {
