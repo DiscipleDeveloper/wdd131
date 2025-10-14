@@ -131,7 +131,7 @@ label.star {
 
 select,
 textarea,
-button,
+input[type="submit"],
 input[type="date"],
 input[type="text"] {
     padding: .8rem;
@@ -152,7 +152,7 @@ input[type="checkbox"] {
     
 }
 
-button {
+input[type="submit"] {
     margin: 2rem auto;
     width: 89%;
     height: 4rem;
@@ -161,7 +161,7 @@ button {
     font-size: 1.3rem;
 }
 
-button:hover {
+input[type="submit"]:hover {
     background-color: rgb(3, 68, 37);
     color: white;
     border: solid 3px rgb(3, 68, 37);
