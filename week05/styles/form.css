@@ -47,7 +47,7 @@ input[type="radio"] {
 .stars {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -61,6 +61,12 @@ input[type="radio"] {
     align-items: center;
     justify-content: center;
     caret-color: rgba(0, 0, 0, 0);
+}
+
+
+
+label.star {
+    margin: 0 0 .5rem 0;
 }
 
 .stars > label::before {
@@ -94,13 +100,7 @@ input[type="radio"] {
     font-weight: 600;
 }
 
-.stars label {
-    margin: 0 1rem 0 2.2rem;
-}
 
-label.star {
-    margin: 0 1.75rem;
-}
 
 
 
