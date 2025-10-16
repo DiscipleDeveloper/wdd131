@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
     
 }
 
@@ -14,6 +15,7 @@ form {
 }
 
 h1 {
+    font-family: "Inter",sans-serif;
     text-align: center;
     border: 2px solid rgb(2, 2, 79);
     padding: 1rem;
