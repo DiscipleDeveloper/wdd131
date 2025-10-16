@@ -1,0 +1,25 @@
+:root {
+    --headings: "Poppins", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #215d9a;
+    --secondary-color: #ffcc41;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    border: solid 1px var(--secondary-color);
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
