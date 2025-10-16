@@ -144,7 +144,7 @@ h1 {
     width: 120px;
     background-color: var(--accent-color);
     color: var(--secondary-color);
-    border-radius: 10rem;
+    border-radius: 7px;
     box-shadow: 1px 1px 3px grey;
     font-weight: bolder;
 }
@@ -196,8 +196,9 @@ h2 {
 
 footer {
     text-align: center;
-    border-top: grey solid .5px;
+    border-top: rgb(182, 180, 180) solid .5px;
     margin: 1.5rem;
     padding: 1rem;
     color: var(--accent-color);
+    font-size: .8rem;
 }
