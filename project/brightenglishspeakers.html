@@ -6,31 +6,72 @@
     <title>Bright English Speakers Tutorial Center</title>
     <meta name="author" content="Napoleon B. Tumale">
     <meta name="Description" content="ESL Website For Bright English Speakers Tutorial Center">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="styles/brightenglishspeakers.css">
     <link rel="stylesheet" href="styles/brightenglishspeakers-large.css">
     <script src="scripts/brightenglishspeaker.js" defer></script>
 </head>
-<body>
+<body id="body">
+    <button aria-label="Open menu" id="menu"></button>
     <header>
-        
         <nav>
-            <img src="images/bright-english-logo.svg" alt="Bright English Speakers Logo">
+            <a class="logo" href="#home">
+                <img src="images/bright-english-logo.svg" alt="Bright English Speakers Logo" height="35" width="40">
+                <p>Bright English Speakers<br><span id="tutor">Tutorial Center</span></p>
+            </a>
             <ul>
-                <li>Home</li>
-                <li>Contact Us</li>
-                <li>Learning Tools</li>
+                <li><a class="a" id="home" href="#home">Home</a></li>
+                <li><a class="a" href="contact-us.html"> Contact Us</a></li>
+                <li><a class="a" href="learning.html"> Learning Tools</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="hero">
+        <picture>
+            <source srcset="images/hero2.webp" media="(min-width 580px)">
+            <img src="images/hero1.webp" alt="Classroom ambiance with board and chairs and tables." width="480">
+        </picture>
+        <h1>Practice English with <br>as low as 50k VND!</h1>
 
+        <div class="s-button">
+        <p>Get a 30-minute<br>Trial Class, FREE!<br>Without Commitment.</p>
+        <button>Set a Schedule<br>Now</button>
+        </section>
+        </div>
+
+        <h2>Enjoy Our Offers</h2>
+        <div class="cards">
+            <section>
+                <img src="images/conversation.webp" alt="A girl having conversation with a teacher online.">
+                <h3>Conversation Practice</h3>
+                <p>Best offer for conversational English practice. For children and professionals</p>
+            </section>
+            <section>
+                <img src="images/high-skill.webp" alt="Teacher wearing headset with microphone teaching a class.">
+                <h3>Pronunciation and Grammar</h3>
+                <p>Teacher(s) is excellent and specializes in pronunciation and grammar.</p>
+            </section>
+            <section>
+                <img src="images/comfortable.webp" alt="Father Teaching his son some lesson coming from a device. Related to a class that is likened to this scenario.">
+                <h3>Professional and Friendly</h3>
+                <p>Creating comfortable class atmosphere for professional yet enjoyable learning experience.</p>
+            </section>
+            <section>
+                <img src="images/materials.webp" alt="Learn English book opened. ">
+                <h3>Lesson Materials</h3>
+                <p>Countless books and sources to choose from, to be used for actual classes. </p>
+            </section>
+        </div>
     </main>
 
     <footer>
-
+        <p>©<span id="yearNow"></span> ☀️ Bright English Speakers Tutorial Center ☀️<br>Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

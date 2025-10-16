@@ -1,8 +1,11 @@
 :root {
-    --headings: "Poppins", sans-serif;
-    --body-font: "Roboto", sans-serif;
-    --primary-color: #215d9a;
-    --secondary-color: #ffcc41;
+    --headings: "DM Serif Text",serif;
+    --body-font: "Merriweather",serif;
+    --primary-color: #22223B;
+    --secondary-color: #f3f1eb;
+    --accent-color: #910924;
+    --accent-color2: green;
+    --shadow: 1px 1px 3px grey;
 }
 
 * {
@@ -10,16 +13,191 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--body-font);
+    
 }
 
 body {
-    max-width: 500px;
+    
     margin: 0 auto;
-    border: solid 1px var(--secondary-color);
+    position: relative;
+    background-color: var(--secondary-color);
+}
+
+/* This Section is for all Navigation part including the logo, menu button, and list in the menu */
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: .99rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    box-shadow: 2px 2px 3px grey;
+}
+
+.tutor {
+    font-size: .7rem;
+}
+
+
+/* Button for Hamburger  */
+
+#menu {
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "ⅹ";
+}
+
+.open {
+    display: block;
+    
+}
+
+.open a {
+    display: block;
 }
 
 nav {
-    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 3px grey;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav .a:hover {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+}
+
+/* -------------------------------------------------- */
+
+.hero {
+    padding-bottom: 8px;
+    border-radius: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--headings);
+    font-size: 2.7rem;
+    color: var(--primary-color);
+    text-shadow: var(--shadow);
+    background-color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+.s-button {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    gap: 4.5rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    font-family: var(--headings);
+}
+
+.s-button button {
+    height: 64px;
+    width: 120px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 10rem;
+    box-shadow: 1px 1px 3px grey;
+    font-weight: bolder;
+}
+
+.s-button button:hover {
+    background-color: var(--accent-color2);
+    color: white;
+    box-shadow: 3px 3px 5px green;
+}
+
+.discount {
+    color: var(--primary-color);
+    font-family: var(--headings);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.cards {
+    color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cards img {
+    width: 280px;
+    margin: .4rem auto;
+    border-radius: 1rem;
+    height: 160px;
+    box-shadow: var(--shadow);
+}
+
+.cards section {
+
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    max-width: 350px;
+}
+
+footer {
+    text-align: center;
+    border-top: grey solid .5px;
+    margin: 1.5rem;
+    padding: 1rem;
+    color: var(--accent-color);
 }
