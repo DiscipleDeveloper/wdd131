@@ -25,9 +25,7 @@ body {
 
 /* This Section is for all Navigation part including the logo, menu button, and list in the menu */
 
-header {
-    min-width: 425px;
-}
+
 
 .logo {
     display: flex;
